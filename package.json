@@ -11,7 +11,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/your-username/doorbird-video-capture.git"
+      "url": "https://github.com/j0hannesr0th/doorbird-video-capture"
     },
     "keywords": [
       "go",
@@ -19,8 +19,8 @@
       "video",
       "capture"
     ],
-    "author": "Your Name",
-    "license": "MIT",
+    "author": "Johannes Roth",
+    "license": "GNU Affero General Public License v3.0",
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
