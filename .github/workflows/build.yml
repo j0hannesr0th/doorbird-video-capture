@@ -41,5 +41,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: Semantic Release
-        run: npx semantic-release -e @semantic-release/changelog
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate Changelog
+        run: npx conventional-changelog -p angular -i CHANGELOG.md -s
+
+      - name: Commit and Push Changelog
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CHANGELOG.md
+          git commit -m "Update changelog"
+          git push origin main

@@ -1,0 +1,30 @@
+{
+    "name": "doorbird-video-capture",
+    "version": "1.0.0",
+    "description": "A Go application for capturing videos from Doorbird Doorstation",
+    "main": "main.go",
+    "scripts": {
+      "build": "go build -o doorbird-video-capture",
+      "test": "go test ./...",
+      "start": "go run main.go",
+      "semantic-release": "npx semantic-release"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-username/doorbird-video-capture.git"
+    },
+    "keywords": [
+      "go",
+      "doorbird",
+      "video",
+      "capture"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "@semantic-release/changelog": "^7.0.6",
+      "@semantic-release/git": "^9.1.2",
+      "conventional-changelog-cli": "^3.3.0"
+    }
+  }
+  
