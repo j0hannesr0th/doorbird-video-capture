@@ -1,0 +1,11 @@
+{
+    "doorbird": {
+        "ip": "ip",
+        "username": "username",
+        "password": "password"
+    },
+    "record": {
+        "duration": "60",
+        "path": "videos"
+    }
+}
