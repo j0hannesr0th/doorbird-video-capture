@@ -22,9 +22,9 @@
     "author": "Your Name",
     "license": "MIT",
     "devDependencies": {
-      "@semantic-release/changelog": "^7.0.6",
-      "@semantic-release/git": "^9.1.2",
-      "conventional-changelog-cli": "^3.3.0"
-    }
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "conventional-changelog-cli": "^3.0.0"
+      }
   }
   
