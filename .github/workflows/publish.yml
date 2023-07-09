@@ -1,0 +1,3 @@
+docker build . --tag ghcr.io/j0hannesr0th/doorbird-video-capture:latest
+docker run ghcr.io/j0hannesr0th/doorbird-video-capture:latest
+docker push ghcr.io/j0hannesr0th/doorbird-video-capture:latest
