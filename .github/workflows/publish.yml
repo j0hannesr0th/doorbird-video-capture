@@ -1,3 +1,23 @@
-docker build . --tag ghcr.io/j0hannesr0th/doorbird-video-capture:latest
-docker run ghcr.io/j0hannesr0th/doorbird-video-capture:latest
-docker push ghcr.io/j0hannesr0th/doorbird-video-capture:latest
+name: Publish Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-docker@v1
+
+      - name: Build and publish Docker image
+        run: |
+          docker build . --tag ghcr.io/j0hannesr0th/doorbird-video-capture:latest
+          docker run ghcr.io/j0hannesr0th/doorbird-video-capture:latest
+          docker push ghcr.io/j0hannesr0th/doorbird-video-capture:latest
