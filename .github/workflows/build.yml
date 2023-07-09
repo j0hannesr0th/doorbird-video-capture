@@ -54,5 +54,6 @@ jobs:
           git add CHANGELOG.md
           git commit -m "Update changelog"
           git push origin main
+            <<: *token
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
